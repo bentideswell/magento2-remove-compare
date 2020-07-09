@@ -1,0 +1,14 @@
+{
+    "name": "fishpig/magento2-remove-catalog-product-compare",
+    "description": "",
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "FishPig\\RemoveCatalogProductCompare\\": ""
+        }
+    },
+    "version": "1.0.0"
+}

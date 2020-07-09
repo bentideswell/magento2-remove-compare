@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Block\SectionConfig">
+        <plugin name="FishPig_RemoveCatalogProductCompare" type="FishPig\RemoveCatalogProductCompare\Plugin\Magento\Customer\Block\SectionConfigPlugin"/>
+    </type>
+    <type name="Magento\Customer\CustomerData\SectionPool">
+        <plugin name="FishPig_RemoveCatalogProductCompare" type="FishPig\RemoveCatalogProductCompare\Plugin\Magento\Customer\CustomerData\SectionPoolPlugin"/>
+    </type>
+    <type name="Magento\Catalog\Block\Ui\ProductViewCounter">
+        <plugin name="FishPig_RemoveCatalogProductCompare" type="FishPig\RemoveCatalogProductCompare\Plugin\Magento\Catalog\Block\Ui\ProductViewCounterPlugin"/>
+    </type>
+    <type name="Magento\Catalog\Model\ProductRender">
+        <plugin name="FishPig_RemoveCatalogProductCompare" type="FishPig\RemoveCatalogProductCompare\Plugin\Magento\Catalog\Model\ProductRenderPlugin"/>
+    </type>
+    <type name="Magento\Catalog\Block\FrontendStorageManager">
+        <plugin name="FishPig_RemoveCatalogProductCompare" type="FishPig\RemoveCatalogProductCompare\Plugin\Magento\Catalog\Block\FrontendStorageManagerPlugin"/>        
+    </type>
+</config>
