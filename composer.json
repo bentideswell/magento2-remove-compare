@@ -1,5 +1,5 @@
 {
-    "name": "fishpig/magento2-remove-catalog-product-compare",
+    "name": "fishpig/magento2-remove-compare",
     "description": "",
     "type": "magento2-module",
     "autoload": {
@@ -10,5 +10,5 @@
             "FishPig\\RemoveCatalogProductCompare\\": ""
         }
     },
-    "version": "1.0.1"
+    "version": "1.0.2"
 }
