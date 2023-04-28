@@ -9,11 +9,19 @@ use Magento\Framework\Serialize\SerializerInterface;
 
 class ProductViewCounterPlugin
 {
+    /**
+     *
+     */
+    private $serializer = null;
+
+    /**
+     *
+     */
     public function __construct(SerializerInterface $serializer)
     {
         $this->serializer = $serializer;
     }
-    
+
     /**
      * @param ProductViewCounter $subject
      * @param string $result
@@ -22,7 +30,7 @@ class ProductViewCounterPlugin
     public function afterGetCurrentProductData(ProductViewCounter $subject, $result)
     {
         $data = $this->serializer->unserialize($result);
-        
+
         if (!empty($data['items'])) {
             foreach($data['items'] as $id => $item) {
                 if (isset($item['add_to_compare_button'])) {
@@ -30,7 +38,7 @@ class ProductViewCounterPlugin
                 }
             }
         }
-        
+
         return $this->serializer->serialize($data);
     }
 }
